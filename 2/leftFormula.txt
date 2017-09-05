@@ -1,0 +1,17 @@
+def leftFormula(tokens):
+    if tokens[0] == "bool" and tokens[1] == "(":
+        (e1, tokens) = term(tokens[2:])
+        if tokens[0] == ")":
+            return ({"Bool":[e1]}, tokens[1:])
+        
+    if tokens[0] == "true":
+        return ("True", tokens[1:])
+    
+    if tokens[0] == "false":
+        return ("False", tokens[1:])
+    
+    if not variable(tokens) == None:
+        (e1, tokens) = variable(tokens)
+        return ({"Variable":[e1]}, tokens)
+    
+    return (None, tokens)

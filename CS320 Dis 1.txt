@@ -1,0 +1,8 @@
+write a regular expression to match .0. : \.0\.
+one regular expression corresponds to one language.
+(\.[0-9]\.)|(\.\d\d\.)   -> .11.;.0.
+
+(1)(-|\(|\.|\/|\(\))\d\d\d(-|\)|\ |\.|\/|\(\))\d\d\d(-|\.|\/|\(\))\d\d\d\d
+
+\d((-| |\.|/|\()*)\d\d\d…
+this one doesn’t work

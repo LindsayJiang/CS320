@@ -1,0 +1,16 @@
+truefalse satisfies (true)(false)
+() satisfies (\(\))
+XXXX… satisfies (X)*
+YZYZ satisfies ((YZ)*) | ((Z)*)
+() WOULD NOT SATISFY (YZ)+
++ means at least one.
+
+Ex:
+(-(1|	2|…9)(0|1|..)*)
+|
+(1|…9)*
+|
+0
+
+1+0+1+…
+(0|1)((\+|-)(0|1))*

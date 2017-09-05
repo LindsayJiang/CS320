@@ -1,0 +1,32 @@
+CS320 Lec2
+{a,b,c}
+pal ::= E
+	 | a
+	 | b
+	 | c
+	 | a pal a
+	 | b pal b
+	 | c pal c
+	 | aa
+	 | bb
+	 | cc
+
+
+lang = a lang -> no finite string.
+
+first production rule is language the others are helpers.
+
+python: d = {‘a’ : 1, ‘b’:2}
+d[‘a’]
+1
+{‘And’ : [‘True’, ‘False’]}
+t = {‘And’ : [‘True’, {‘or’:[’True’, ‘False’]}]}
+t[‘And’] = [‘True’, {‘or’:[’True’, ‘False’]}]
+t[‘And’][0] = True
+
+Flexing: concrete syntax -> token sequences
+parsing: token sequences -> abstract syntax
+
+[s for s in [‘’, ‘abc, ‘def’] if len(s) > 0]
+
+All our tree labels will start with Capital letter.
